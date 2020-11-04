@@ -1,0 +1,56 @@
+https://docs.google.com/spreadsheets/d/1XixzzZh0DHtMjw-KITi-NL3wjmHjdLZe1oGP37gqez8/edit#gid=0
+http://library2.cybertekschool.com/login.html
+
+student54@library	3nHQlWhN
+student55@library	8TPM4JKJ
+student56@library	4dJYzMiG
+librarian43@library	np6AxVIh
+
+"AC:  1. Students should have access to 2 modules
+         When user login as a student
+         Then user see <module>
+         | Books |
+         | Borrowing Books|
+
+AC:  2. Librarians  should have access to 3 modules "
+
+
+
+
+As a librarian, I should be able to add users from users page.
+"AC:  1. add users with all valid info.
+        2. Librarians able to close the add user window with ""close"" button
+        3. Librarians able to edit user info.
+"
+
+
+
+
+As a librarian, I should be able to see book records on user page
+"AC:  1. default 10 records
+        2. Show records for <count> options
+   Examples:
+      | count |
+      | 5        |
+      | 10      |
+      | 15      |
+      | 50      |
+      | 100    |"
+
+
+
+
+As a students, I should be able to see tables with default info
+"Scenario: Table columns names
+   Then table should have following column names:
+      | Actions     |
+      | ISBN        |
+      | Name       |
+      | Author      |
+      | Category  |
+      |Year          |
+
+"
+
+
+As a students, I should be able to serach books with different categories.
