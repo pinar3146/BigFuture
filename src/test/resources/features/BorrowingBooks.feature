@@ -1,13 +1,9 @@
-Feature: Borrowing Books Page
+Feature: Borrowing Books Display
 
-  Scenario: Borrowing Books
+  Scenario: Returning the borrowed books
     Given The user is on the Borrowing Books Page
-    And The user should see the user name on the Users  drop down box
-    When The user see Borrowed Books title under the Users drop down
-    Then The user should see following column names
-      | Action              |
-      | Book Name           |
-      | Borrowed Date       |
-      | Planned Return Date |
-      | Return Date         |
-      | Is Returned?        |
+    When The user clicks to the return button
+    Then The user sees the following options changed
+    |Return Book|
+    |Return Date|
+    |Is Returned ?|
